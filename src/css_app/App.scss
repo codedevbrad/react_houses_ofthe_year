@@ -1,0 +1,39 @@
+@import "./variables.scss";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Ibarra+Real+Nova:400,600&display=swap');
+// font-family: 'Ibarra Real Nova', serif;
+
+* { -webkit-font-smoothing: antialiased; }
+
+h1, h2, h3, h4, a, li, p, input, label, textarea, button {
+  font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 0.87em; letter-spacing: 0em;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+}
+
+input , button { font-weight: 400; }
+
+/* -- html content -- */
+
+html, body { padding: 0; margin: 0;  width: 100%; cursor: none; overflow: hidden;  }
+
+html    { height: 100%;
+          scroll-behavior: smooth; -webkit-user-select: none; /* Chrome/Safari */ -moz-user-select: none; /* Firefox */
+          -ms-user-select: none;   -o-user-select: none; user-select: none;
+        }
+body    { min-height: 100%; height: 100%;  max-height: 100%; overflow: hidden; }
+
+a       { text-decoration: none; cursor: pointer; }
+a:hover { text-decoration: none; }
+svg     { pointer-events:  none; }
+
+.App , #root , .main {  width: 100%; height: 100%; color: white; background: #0c0c0c; }
+
+.main { display: flex; }
+
+
+// #root > .App > .main

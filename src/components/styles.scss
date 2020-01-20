@@ -1,0 +1,132 @@
+//  background: #161313;
+#loadScreen_split {
+    width: 100%;  height: 100%; position: fixed; top: 0; left: 0;
+    display: flex; justify-content: center; align-items: center; z-index: 8000;
+    transition: all 1.5s;  background: #0c0c0c;
+
+    #loadscreen_text_center {
+        height: 90px; display: flex; justify-content: center; align-items: center; overflow: hidden;
+        h3 { font-family: 'Ibarra Real Nova', serif; font-size: 1.5em; transition: all 400ms;
+          animation: fadeIn ease 2s;
+          animation-iteration-count: 1;
+          transform-origin: 50% 50%;
+          animation-fill-mode:forwards; /*when the spec is finished*/
+          -webkit-animation: fadeIn ease 2s;
+          -webkit-animation-iteration-count: 1;
+          -webkit-transform-origin: 50% 50%;
+          -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/
+         }
+    }
+}
+
+@keyframes fadeIn{
+  0%   { opacity:0.39; transform: translate(0px,105px); }
+  100% { opacity:1; transform:  translate(0px,0px);  }
+}
+
+@-webkit-keyframes fadeIn {
+  0%   { opacity:0.39; -webkit-transform:  translate(0px,105px); }
+  100% { opacity:1;    -webkit-transform:  translate(0px,0px);  }
+}
+
+#follower{
+    position: fixed; float: left; width: 30px; height: 30px; border-radius: 50%;
+    cursor: none; display: flex; box-shadow: 0 0 10px 10px transparent; transition: width 400ms , height 400ms;
+    align-items: center; justify-content: center;
+    pointer-events: none; z-index: 9999;
+}
+
+#inner {
+    width: 100%; height: 100%; background: red; z-index: 9999; border-radius: 50%;
+    transition: width 400ms , height 400ms;
+}
+.canScroll {
+    scroll-behavior: smooth;
+}
+
+#frame , #page_nav {
+  width: 100%; height: 100%; overflow: hidden; background: #0c0c0c;
+}
+
+#frame > div#move {
+  transition: all 500ms; height: 100%;
+}
+
+.smooth_scroll { transition: all 900ms; }
+
+
+#page_nav {
+    width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center;
+    padding: 60px 10px 30px 10px;
+    #top_nav {  width: 100%; height: 50px; }
+    #bottom_nav {
+        width: 90%; height: 100%; display: flex; flex-direction: row;
+        nav {
+            width: 55%; height: 100%; border-right: 1px solid #1c1c1cf0; padding-right: 20px;
+            ul > li { font-size: 2.1em; margin: 20px 0; margin-top:  0; font-weight: 700; color: #9b9b9b; }
+         }
+        div { width: 100%; height: 100%; }
+    }
+}
+
+
+.main > #main_app {
+    position: relative; width: 100%; height: 100%;
+    header {
+      width: 100%; height: 60px; position: absolute; left: 0; top: 0;  display: flex; justify-content: flex-end; flex-direction: row;
+      #menu {
+        margin: 0 20px; width: auto; height: 100%; color: white; display: flex; justify-content: center; align-items: center; flex-direction: row;
+        z-index: 9999;
+        h3 { font-weight: 400; font-size: 0.7em; }
+        div.menu_btn {
+          display: flex; flex-direction: row; align-items: center;
+          > .line { width: 20px; height: 2px; background: white; position: relative; left: 8px; }
+          svg , i { font-size: 1.5em; }
+        }
+      }
+    }
+
+    #frame { transition: all 500ms; }
+}
+
+.box {
+  width: 100%; height: 100%; float: left; border-right: 1px solid #1c1c1cf0; overflow: hidden;
+  display: flex;
+  align-items: center; justify-content: center; position: relative;
+      .box_information , .box_info_centered { width: 100%; height: 43%; position: absolute; display: flex; align-items: center; justify-content: center;
+           section {
+              width: 60%; color: #9b9b9b;
+              h2 { font-size: 1.3em; display: flex; flex-direction: row; align-items: center;
+                  div { width: 30px; height: 5px; background: #9b9b9b; margin-right: 10px; }
+              }
+              h3 { font-size: 1.5em;  }
+              p  { font-weight: 400; font-size: 0.9em; padding: 10px 0; line-height: 1.5; font-family: 'Ibarra Real Nova', serif; font-style: italic; }
+              div.explore_houseBtn {
+                width: 75%; display: flex; flex-direction: row; align-items: center; position: relative;
+                margin-top: 10px;
+                div {
+                  width: 80%; height: 33px; transition: all 700ms; background: #907e7e3b; opacity: 0.4; position: absolute; right: 0;
+                  .line { width: 100%; height: 100%;  }
+                }
+                p { font-size: 0.69em; font-weight: 600; }
+              }
+           }
+      }
+      .inner_box {
+        width: 77%; height: 48%;  position: absolute; transition: all 600ms;
+        div { width: 100%; height: 100%; transition: all 500ms; }
+        div > img { width: 100%; height: 100%; opacity: 0.5; transition: all 500ms; }
+      }
+}
+
+#single_element {
+    width: 100%; height: 100%; position: absolute; overflow-y: hidden;
+    #carousel_image_single { width: 100%; height: 100%;
+        > img { top: 0; bottom: 0; margin: auto; position: absolute; left: 0; right: 0; opacity: 0.5; }
+    }
+}
+
+
+#click {
+  position: fixed; bottom: 10px; right: 30px; color: white;
+}
