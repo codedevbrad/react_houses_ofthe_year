@@ -11,14 +11,14 @@ import Carousel from './packages/carousel';
 
 const houses = [
   { img: '' , title: 'house of the year 2019' , info: 'explore the winners of house of the year 2019.' } ,
-  { img: '/houses/pic1.jpg' , title: 'a modern feel' , info: 'explore the feel of a modern house set in the busy streets of california.'} ,
-  { img: '/houses/pc2.jpg'  , title: 'rustic feel'   , info: 'see why container houses are the newest trend of 2019.' } ,
-  { img: '/houses/pic3.jpg' , title: 'green breeze'  , info: 'set in the welsh forest, the green breeze house has a stunning view all to itself.'} ,
-  { img: '/houses/pic4.jpg' , title: 'the black box' , info: 'the minimilist black box overlooks the dorset lake with stunning views.' } ,
-  { img: '/houses/pic5.jpg' , title: 'highland house', info: 'what may look like a red box, the highland house offers a warm, secluded experience.'  } ,
-  { img: '/houses/pic6.jpg' , title: 'rustic office' , info: 'this rustic building set in the busy city creates a unique modern work setting.' } ,
-  { img: '/houses/pic7.jpg' , title: 'the lonely cottage' , info: '' } ,
-  { img: '/houses/pic8.jpg' , title: 'riverback retreat'  , info: '' } ,
+  { img: './houses/pic1.jpg' , title: 'a modern feel' , info: 'explore the feel of a modern house set in the busy streets of california.'} ,
+  { img: './houses/pc2.jpg'  , title: 'rustic feel'   , info: 'see why container houses are the newest trend of 2019.' } ,
+  { img: './houses/pic3.jpg' , title: 'green breeze'  , info: 'set in the welsh forest, the green breeze house has a stunning view all to itself.'} ,
+  { img: './houses/pic4.jpg' , title: 'the black box' , info: 'the minimilist black box overlooks the dorset lake with stunning views.' } ,
+  { img: './houses/pic5.jpg' , title: 'highland house', info: 'what may look like a red box, the highland house offers a warm, secluded experience.'  } ,
+  { img: './houses/pic6.jpg' , title: 'rustic office' , info: 'this rustic building set in the busy city creates a unique modern work setting.' } ,
+  { img: './houses/pic7.jpg' , title: 'the lonely cottage' , info: '' } ,
+  { img: './houses/pic8.jpg' , title: 'riverback retreat'  , info: '' } ,
   { img: '' , title: ''  , info: '' }
 ];
 
