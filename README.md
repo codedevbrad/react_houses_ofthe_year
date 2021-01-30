@@ -1,5 +1,4 @@
-
-## Available Scripts
+## to complete
 
 - load animations don't work if you click navbar open / close too fast.
 - there's a memory leak with the carousel.
@@ -9,3 +8,7 @@
 - make a nicer transition when going back from a single element to the carousel.
 
 - add a fade in effect to the carousel elements.
+
+- work on an about page
+
+- add some music maybe?.
